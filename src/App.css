@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 body {
   background-color: #25252c;
+  font-family: 'Inter', sans-serif;;
 }
 
 figure {
@@ -7,7 +9,7 @@ figure {
   padding: 0px;
 }
 .App {
-  width: 300px;
+  width: 317px;
   background-color: rgb(245, 245, 245);
   border-radius: 10px;
   overflow: hidden;
@@ -17,16 +19,26 @@ figure {
 img {
   width: 100%;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 h1, h2, h3, h4 {
   margin: 10px 0px 0px 0px;
   padding: 0px;
 }
+
 .profile-contenaire {
   text-align: center;
   padding: 0px;
   margin: 0px;
 }
+
+.profile-contenaire h1 {
+  font-size: 25px;
+  color: #2B283A;
+}
+
 .profile-contenaire p {
   margin: 5px 0 0 0;
   padding: 0px;
@@ -36,9 +48,10 @@ h1, h2, h3, h4 {
   color: rgb(255, 158, 39);
   font-size: 13px;
 }
-.user-website {
+.user-website a {
   color: rgb(96, 96, 96);
   font-size: 11px;
+  text-decoration: none;
 }
 
 .contact-container {
