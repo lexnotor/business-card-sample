@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Post from './components/Post';
+import Profile from './components/Profile';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile />
+      <Contact />
+      <Post titre='About'>
+        I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.
+      </Post>
+      <Post titre='Interests'>
+        Food expert. Music sholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
+      </Post>
+      <Footer />
     </div>
   );
 }
